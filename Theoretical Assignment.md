@@ -1,7 +1,7 @@
 ﻿**What is a neural network neuron?**
 
 A neuron in an artificial neural network is an elementary block that mimics the functionality of human neurons. However, with stark difference that neurons/perceptron are enabled with memory storage for a very short duration of time and serve as an elementary computational block unlike the human neurons that allow for memory storage, computation and signalling. Also, unlike Human neuron where inputs may be termed as dendrites and outputs are via Axioms, the input and output lines for perceptron’s are termed as weights.
-
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/001.png)
 ![](Resources\Theory\001.png)
 
 
