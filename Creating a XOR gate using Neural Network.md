@@ -1,8 +1,4 @@
-# END-3.0  Assignment 1 
-
-##Code
-
-Creating a XOR gate using Neural Network 
+﻿Creating a XOR gate using Neural Network 
 
 Here is an XOR truth table:
 
@@ -183,8 +179,6 @@ tensor([0.], grad\_fn=<RoundBackward>)
 
 
 0. ***Also review a secondary solution designed by us, we also have put in a consolidated file with different experiments conducted by us. Any Feedback is appreciated.***
-
-> Consolidated Code Training Fragment.ipynb
 
 
 
