@@ -6,28 +6,28 @@ Creating a XOR gate using Neural Network
 
 Here is an XOR truth table:
 
-![](Resources/001.png)
+![](Session1/Resources/001.png)
 
 We want to predict the output based on the two inputs A and B.
 
 At first, for such a simple task, training a perceptron via updating its weights and bias’s may seem like a good idea. However, XOR is not a non-linear function so a perceptron on its own cannot learn how to predict this.
 
 
-![](Resources/002.png)
+![](Session1/Resources/002.png)
 
 Above is the equation for a single perceptron with no activation function. It takes a transpose of the input vector, multiplies it with the weight vector and adds the bias vector. In this case, the input vector is [0, 0], [0, 1], [1, 0] or [1, 1]. Alone, this basic perceptron, no matter what the weights and bias are, can never accurately predict the XOR output since it is a linear function and XOR is not.
 
 Minsky and Papert proved using Perceptrons  that neural networks is incapable of learning very simple functions. Learnings by perceptron in a 2-D space is shown in image 2. They chose Exclusive-OR as one of the example and proved that Perceptron doesn’t have ability to learn X-OR. As described in image 3, X-OR is not separable in 2-D. So, perceptron can’t propose a separating plane to correctly classify the input points.
 
-![](Resources/003.png)
+![](Session1/Resources/003.png)
 
-![](Resources/004.png)
+![](Session1/Resources/004.png)
 
 So we can effectively Summarize that a single neuron/perceptron is completely incapable of solving an non linear problem no matter what the weights and biases be , it can only be solved once we convert it into non-linear space. This is one of the classical examples why activation functions are so important and how they aid in the overall learning of feature by allowing to reach a separable threshold.
 
 Multi layer perceptron are the networks having stack of neurons and multiple layers. A basic neuron in modern architectures looks like image 4:
 
-![](Resources/005.png)
+![](Session1/Resources/005.png)
 
 Image 4: Single Neuron
 
@@ -38,17 +38,17 @@ Each neuron is fed with an input along with associated weight and bias. A neuron
 
 Now to describe a process of solving X-OR with the help of MLP with one hidden layer. So, our model will have an input layer, one hidden layer and an output layer. Out model will look something like below image :
 
-![](Resources/006.png)
+![](Session1/Resources/006.png)
 
 To solve this issue of a **single perceptron being linear**, we need to add another layer to the network. This extra layer is called **the sigmoid function**. The sigmoid function is a nonlinear activation function:
 
-![](Resources/007.png)
+![](Session1/Resources/007.png)
 
 Source: <https://pytorch.org/docs/stable/generated/torch.nn.Sigmoid.html>
 
 If 0 were input into this function, as seen in diagram above, the output would be 0.5. An example in code is shown below:
 
-![](Resources/008.png)
+![](Session1/Resources/008.png)
 ```{python}
 import torch.nn.functional as F
 print(F.sigmoid(torch.tensor([0])))  >> tensor([0.500])
@@ -74,7 +74,7 @@ Function involves minimalistic changes from assignment
 1. **Loss function -> L1 loss (original function )**
 1. **Learning Rate -> 0.03**
 
-![](Resources/0005.png)
+![](Session1/Resources/0005.png)
 
 **Issue** : Gives -0 for matching outputs surely the result of improper activation function and loss function as the loss topology as visualized above is too erratic.
 
@@ -170,7 +170,7 @@ Epoch: 1500 completed
 
 Epoch: 2000 completed
 
-![](Resources/009.png)
+![](Session1/Resources/009.png)
 
 tensor([1.], grad\_fn=<RoundBackward>)
 

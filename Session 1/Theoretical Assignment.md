@@ -1,11 +1,11 @@
 ﻿**What is a neural network neuron?**
 
 A neuron in an artificial neural network is an elementary block that mimics the functionality of human neurons. However, with stark difference that neurons/perceptron are enabled with memory storage for a very short duration of time and serve as an elementary computational block unlike the human neurons that allow for memory storage, computation and signalling. Also, unlike Human neuron where inputs may be termed as dendrites and outputs are via Axioms, the input and output lines for perceptron’s are termed as weights.
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/001.png)
-![](Resources\Theory\001.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/001.png)
+![](Session1/Resources\Theory\001.png)
 
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/002.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/002.png)
 
 
 Each neuron is fed with an input along with associated weight and bias. A neuron has two functions:
@@ -18,11 +18,11 @@ Now an Activation function plays a very critical task of converting the Acumulat
 
 So essentially without activation function : 
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/003.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/003.png)
 
 With Activation Function : 
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/004.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/004.png)
 
 
 **What is the use of the learning rate?**
@@ -35,7 +35,7 @@ The following formula shows the relationship.
 
 New Weight = Old weight – Learning Rate \* Gradient.
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/005.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/005.png)
 
 
 
@@ -51,7 +51,7 @@ If in case the gradient is +ve then we reduce the weight to reduce the error or 
 
 Diagram below illustrates it. 
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/0005.png) 
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/0005.png) 
 
 Typically learning rates are configured naively at random by the user. At best, the user would leverage on past experiences (or other types of learning material) to gain the intuition on what is the best value to use in setting learning rates.
 
@@ -62,13 +62,13 @@ Over the years we have however come up with different approaches to balance the 
 1. One cycle learning rate policy 
 1. Cyclic learning rate 
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/006.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/006.png)
 
 **Why do we go with Neural Network Weight Initialization ?**
 
 Weight Initialization is important to deal with Vanishing and exploding gradient as the back propagation otherwise does not make sense as it is either too large or too small of an update during Back propagation. Hence it is advisable to keep it as close to 0 as possible hence we initialize weights so that weights at individual levels does not explode or vanish.
 
-![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Resources/Theory/007.png)
+![](https://github.com/DhrubaAdhikary/END-3.0/blob/master/Session1/Resources/Theory/007.png)
 
 As seen in the image above there are two extremes possible for instance 10^7 and 10^-7 so even we send weight update in back propagation it will not make sense for each layer.
 
